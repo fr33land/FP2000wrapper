@@ -47,7 +47,7 @@ public class FP2000Cmd
 							{
 								cmdHex = cmdHex + " " + Integer.toHexString(cmdArrParse[j]);
 							}
-						System.out.println("Siunciama komanda statusOfFiscalTransaction: " + cmdHex);
+						System.out.println("Sending command statusOfFiscalTransaction: " + cmdHex);
 						seq++;
 						return outputStream;
 					} 
@@ -120,7 +120,7 @@ public class FP2000Cmd
 						cmdHex = cmdHex + " " + Integer.toHexString(cmdArrParse[j]);
 					}
 	
-					System.out.println("Siunciama komanda calculationOfTotal: " + cmdHex);
+					System.out.println("Sending command  calculationOfTotal: " + cmdHex);
 					seq++;
 					return outputStream;
 				} catch (IOException e) {
@@ -157,7 +157,7 @@ public class FP2000Cmd
 								cmdHex = cmdHex + " " + Integer.toHexString(cmdArrParse[j]);
 							}
 	
-						System.out.println("Siunciama komanda: " + cmdHex);
+						System.out.println("Sending command : " + cmdHex);
 						seq = 0x20;
 						return outputStream;
 					} 
@@ -193,7 +193,7 @@ public class FP2000Cmd
 								cmdHex = cmdHex + " " + Integer.toHexString(cmdArrParse[j]);
 							}
 						
-						System.out.println("Siunciama komanda cancelFiscalReceipt: " + cmdHex);
+						System.out.println("Sending command cancelFiscalReceipt: " + cmdHex);
 						seq++;
 						return outputStream;
 					} 
@@ -225,7 +225,7 @@ public class FP2000Cmd
 						for (int j = 0; j < cmdArrParse.length; j++) {
 							cmdHex = cmdHex + " " + Integer.toHexString(cmdArrParse[j]);
 						}
-						System.out.println("Siunciama komanda closingNonFiscalReceipt: " + cmdHex);
+						System.out.println("Sending command  closingNonFiscalReceipt: " + cmdHex);
 						seq++;
 						return outputStream;
 					} 
